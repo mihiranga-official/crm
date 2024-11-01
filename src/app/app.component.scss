@@ -14,7 +14,7 @@ form {
   z-index: 1;
   top: 0;
   overflow-x: hidden;
-  padding-top: 15px;
+  padding-top: 10px;
 }
 .left {
   left: 0;
@@ -48,9 +48,12 @@ form {
   grid-template-columns: 2fr 2fr 2fr 2fr 2fr ;
 }
 .payment-details-divider {
+
   display: grid;
-  grid-template-columns: 2fr 2fr  ;
+  grid-template-columns: 6fr 6fr ;
+
 }
+
 .second {
   left: 0;
   width: 30%;
@@ -76,12 +79,12 @@ form {
 .payemnt {
   display: grid;
   margin: 1%;
-
   grid-template-columns: 1fr 2fr;
 }
 .tempory-item {
-  display: grid;
-  grid-template-columns: 2fr 2fr 2fr 2fr;
+  display: inline-flex;
+  // grid-template-columns: 
+  gap: 20px
 }
 
 .column {
@@ -120,4 +123,24 @@ form {
 .dividers{
   display: grid;
   grid-template-columns: 2fr 2fr ;
+  margin: 1%;
+}
+
+fieldset{
+  margin: 1%;
+  padding: 1%;
+  background-color: #eeeeee;
+  font-weight: 600;
+
+}
+legend{
+  background-color: rgb(139, 135, 135);
+  margin: 1%;
+    padding: 5px 10px;
+}
+button{
+  cursor: pointer;
+}
+.payment-details-field-sets{
+  width: 40%;
 }
