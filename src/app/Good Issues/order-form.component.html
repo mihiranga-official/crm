@@ -1,0 +1,175 @@
+<div class="main-divider">
+  <div class="second-divider">
+    <div>
+      <div>
+        <label class="colorfull-Label" for="">01.Search Appliance</label>
+      </div>
+      <input type="text" />
+    </div>
+
+    <div>
+      <div>
+        <label class="colorfull-Label" for="">02.Search Model</label>
+      </div>
+
+      <input type="text" />
+    </div>
+
+    <div>
+      <div>
+        <label class="colorfull-Label" for=""
+          >02.Search Item [Search by Item Description]</label
+        >
+      </div>
+
+      <input style="width: 320px" type="text" />
+    </div>
+
+    <div>
+      <div>
+        <label for=""></label>
+      </div>
+
+      <input type="date" [(ngModel)]="currentDate" readonly />
+    </div>
+  </div>
+
+
+  <div class="tables">
+    <div class="center-table">
+      <table>
+        <thead>
+          <tr>
+            <th></th>
+            <th>Applince</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let person of data">
+            <td>{{ person.id }}</td>
+            <td>{{ person.name }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="right-table">
+        <div class="model-table">
+            <table>
+                <thead>
+                  <tr>
+                    <th></th>
+                    <th>Model</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let person of nextdata">
+                    <td>{{ person.id }}</td>
+                    <td>{{ person.name }}</td>
+                  </tr>
+                </tbody>
+              </table>
+        </div>
+   
+      </div>
+
+     <div class="right-table">
+        <table>
+          <thead>
+            <tr>
+
+              <th>Select</th>
+              <th>Stock Code</th>
+              <th>Item Description </th>
+              <th>Price </th>
+              <th>Available Qty </th>
+              <th>Request Qty </th>
+              <th>Stock Available </th>
+              <th>Available Date </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let person of finalResults">
+              <td><input type="checkbox"></td>
+              <td>{{ person.code }}</td>
+              <td>{{ person.description }}</td>
+              <td>{{ person.price }}</td>
+              <td>{{ person.discount }}</td>
+              <td>{{ person.tax }}</td>
+              <td>{{ person.availability }}</td>
+              <td>{{ person.date }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+  </div>
+  <div class="orderForm"> <strong  class="colorfull-Label" for="" >Your Order Form <strong   for=""></strong>{{orderForm|number:'1.2-2'}} <strong for=""></strong></strong>   <strong for=""  class="colorfull-Label">Total Bill Value: <label  for=""></label>{{totalBillValue|number:'1.2-2'}}</strong>      </div>
+ 
+    <div class="center-tables">
+        <div class="center-tables-a">
+            <table >
+                <thead>
+                  <tr>
+                    <th></th>
+                    <th>Item Description</th>
+                    <th>Price</th>
+                    <th>Qty</th>
+                    <th>Amount</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let person of fourthTable">
+                    <td>{{ person.id }}</td>
+                    <td>{{ person.description }}</td>
+                    <td>{{ person.price }}</td>
+                    <td>{{ person.qty }}</td>
+                    <td>{{ person.ammount }}</td>
+                 
+                  </tr>
+                </tbody>
+              </table>
+        </div>
+  
+      <div class="right-tables">
+        
+        <table >
+          <thead>
+            <tr>
+           
+              <th>Select</th>
+              <th>Stock Code</th>
+              <th>Item Description </th>
+              <th>Price </th>
+              <th>Available Qty </th>
+              <th>Request Qty </th>
+              <th>Stock Available </th>
+              <th>Available Date </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let person of finalResults">
+                <td><input type="checkbox"></td>
+                <td>{{ person.code }}</td>
+                <td>{{ person.description }}</td>
+                <td>{{ person.price }}</td>
+                <td>{{ person.discount }}</td>
+                <td>{{ person.tax }}</td>
+                <td>{{ person.availability }}</td>
+                <td>{{ person.date }}</td>
+            </tr>
+          </tbody>
+        </table>
+        
+      </div>
+      
+    </div>
+
+    <div>
+        <strong for="" style="color: red;">Please Select Remove item form Order Sheet then Press This Button</strong> 
+        <label for=""></label> 
+        <button style="background-color: #C96868; width: 250px;height: 40px;">06. Order Form Item Remove</button> 
+        <label for=""></label>
+        <button style="background-color: #18d131; width: 250px;height: 40px;">Add Selected Item To Order form</button>
+
+    </div>
+</div>
