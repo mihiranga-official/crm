@@ -1,0 +1,26 @@
+.first-divider{
+    display: grid;
+    grid-template-rows: 1fr  1fr 1fr ;
+    width: 90%;
+
+
+    //
+    // div{
+    //     display: grid;
+    //     grid-template-columns: 1fr 2fr;
+    //     width: 60%;
+    // }
+
+
+
+}
+
+.item{
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr    ;
+    width: 80%;
+    label{
+        text-align: left;
+        margin-right: 10px;
+    }
+}

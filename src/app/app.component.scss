@@ -1,146 +1,15 @@
-body {
-  margin: 0;
-  padding: 0;
+body{
+  margin: 0%;
+  padding: 0%;
 }
-form {
+.contents {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+.header {
+  border: 1px solid black;
+  gap: 10px;
   margin: 1%;
   padding: 1%;
-}
-.split {
-  height: 100%;
-  width: 30%;
-  margin: 1%;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  overflow-x: hidden;
-  padding-top: 10px;
-}
-.left {
-  left: 0;
-  width: 30%;
-}
-
-.right {
-  right: 0;
-  width: 66%;
-}
-.divider {
-  font-size: 20px;
-  display: flex;
-  align-items: start;
-
-}
-.divider::before,
-.divider::after {
-  flex: 1;
-  content: "";
-  padding: 1px;
-  background-color: rgb(0, 0, 0);
-  margin: 5px;
-}
-.customer-details-divider {
-  display: grid;
-  grid-template-columns: 2fr 2fr 2fr 2fr ;
-}
-.item-details-divider {
-  display: grid;
-  grid-template-columns: 2fr 2fr 2fr 2fr 2fr ;
-}
-.payment-details-divider {
-
-  display: grid;
-  grid-template-columns: 6fr 6fr ;
-
-}
-
-.second {
-  left: 0;
-  width: 30%;
-}
-.third {
-  right: 0;
-  width: 30%;
-}
-.splits {
-  height: 50%;
-  width: 30%;
-  margin: 1%;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  overflow-x: hidden;
-  padding-top: 15px;
-}
-.div {
-  margin: 1%;
-  padding: 1%;
-}
-.payemnt {
-  display: grid;
-  margin: 1%;
-  grid-template-columns: 1fr 2fr;
-}
-.tempory-item {
-  display: inline-flex;
-  // grid-template-columns: 
-  gap: 20px
-}
-
-.column {
-  float: left;
-  width: 50%;
-  padding: 10px;
-  height: 300px; 
-}
-
-
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-
-}
-* {
-  box-sizing: border-box;
-}
-.cash{
-    display: grid;
-    grid-template-columns: 2fr 2fr 2fr;
-    border: 1px solid black; 
-    margin: 1% ;
-    padding: 1%;
-
-}
-.cash-inv{
-    display: grid;
-    grid-template-columns: 2fr 2fr ;
-    border: 1px solid black; 
-    margin: 1% ;
-    padding: 1%;
-    float: right;
-}
-.dividers{
-  display: grid;
-  grid-template-columns: 2fr 2fr ;
-  margin: 1%;
-}
-
-fieldset{
-  margin: 1%;
-  padding: 1%;
-  background-color: #eeeeee;
-  font-weight: 600;
-
-}
-legend{
-  background-color: rgb(139, 135, 135);
-  margin: 1%;
-    padding: 5px 10px;
-}
-button{
-  cursor: pointer;
-}
-.payment-details-field-sets{
-  width: 40%;
 }
