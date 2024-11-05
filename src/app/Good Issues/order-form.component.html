@@ -37,7 +37,7 @@
 
   <div class="tables">
     <div class="center-table">
-      <table>
+      <table style="width: 100%;">
         <thead>
           <tr>
             <th></th>
@@ -55,7 +55,7 @@
 
     <div class="right-table">
         <div class="model-table">
-            <table>
+            <table style="width: 100%;">
                 <thead>
                   <tr>
                     <th></th>
@@ -74,7 +74,7 @@
       </div>
 
      <div class="right-table">
-        <table>
+        <table style="width: 150%;" >
           <thead>
             <tr>
 
@@ -103,11 +103,48 @@
         </table>
       </div>
   </div>
-  <div class="orderForm"> <strong  class="colorfull-Label" for="" >Your Order Form <strong   for=""></strong>{{orderForm|number:'1.2-2'}} <strong for=""></strong></strong>   <strong for=""  class="colorfull-Label">Total Bill Value: <label  for=""></label>{{totalBillValue|number:'1.2-2'}}</strong>      </div>
+
+  <div class="orderForm"> <strong   for="" >Your Order Form 
+    <strong   for=""></strong>{{orderForm|number:'1.2-2'}} <strong for="">
+    </strong></strong>   
+    <strong for=""  >Total Bill Value: <label  for=""></label>{{totalBillValue|number:'1.2-2'}}</strong>  
+     <label  for=""></label>
+
+    
+  
+    <fieldset class="please-select">
+      <legend>7.Please Select</legend>
+      <input type="checkbox">
+      <label for="">W/H or Stock</label>
+      <input type="checkbox">
+      <label for="">Customer</label>
+      <input type="checkbox">
+      <label for="">Dealer</label>
+      <input type="checkbox">
+      <label for="">Authorized Service Center</label>
+    
+    </fieldset>
+    <fieldset class="please-select">
+      <legend>Please Add Data:</legend>
+      <label for="">Dealer/Customer Name:</label>
+      <input type="text" name="" id="">
+      <label for="">Item Serial Number:</label>
+      <input type="text" name="" id="">
+      <label for="">Mobile Number:</label>
+      <input type="text" name="" id="">
+
+      <label for="">Phone Number:</label>
+      <input type="text" name="" id="">
+      
+      <label for="">Invoice Adress:</label>
+      <input type="text" name="" id="">
+    </fieldset>
+  </div>
  
+
     <div class="center-tables">
         <div class="center-tables-a">
-            <table >
+            <table style="width: 100%;">
                 <thead>
                   <tr>
                     <th></th>
@@ -132,7 +169,7 @@
   
       <div class="right-tables">
         
-        <table >
+        <table style="width: 100%;" >
           <thead>
             <tr>
            
@@ -161,15 +198,14 @@
         </table>
         
       </div>
-      
+      <label for=""></label>
+      <button class="add-btn"  >04 .Add Selected Item To Order form</button>   
     </div>
 
-    <div>
-        <strong for="" style="color: red;">Please Select Remove item form Order Sheet then Press This Button</strong> 
-        <label for=""></label> 
-        <button style="background-color: #C96868; width: 250px;height: 40px;">06. Order Form Item Remove</button> 
-        <label for=""></label>
-        <button style="background-color: #18d131; width: 250px;height: 40px;">Add Selected Item To Order form</button>
-
+    <div class="btn-class">
+        <strong for="" style="color: red; " >Please Select Remove item form Order Sheet then Press This Button.</strong> 
+         <button style="background-color: #C96868; width: 200px;height: 40px;">06. Order Form Item Remove</button> 
+         <button class="add-btn"  >04 .Save Your Order </button>   
     </div>
+    
 </div>
