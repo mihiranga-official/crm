@@ -1,0 +1,33 @@
+{
+    "divisionName": "Engineering",
+    "employeeName": "John Doe",
+    "employeeId": 12345,
+    "month": "October",
+    "epfNumber": 67890,
+    "epfCompanyId": 101,
+    "epfCompanyCode": "EPF001",
+    "epfCompanyName": "Global Provident Fund Ltd",
+    "basicSalary": 50000,
+    "serviceYear": 5,
+    "totalDailyPaySalary": 20000,
+    "totalOtAmount": 5000,
+    "totalPieceRateSalaryAmount": 10000,
+    "extraPieceRatePercentage": 5,
+    "extraPiecerateSalary": 500,
+    "totalPieceRateHours": 120,
+    "totalNormalHours": 160,
+    "totalWorkHours": 280,
+    "totalNormalSalary": 45000,
+    "totalPaidSalary": 75000,
+    "totalEffency": 95,
+    "totalEffency_Minus": 0,
+    "basicSalaryTotal": 50000,
+    "incentiveSalaryTotal": 25000,
+    "maximumPieceRateValue": 15000,
+    "standardHourlyWage": 300,
+    "maximumHourlyWageRatio": 1.5,
+    "totalOtHours": 20,
+    "totalHoliDayPay": 2000
+ 
+  }
+  

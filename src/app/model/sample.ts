@@ -1,4 +1,4 @@
-export interface ApprovedWorkFlowData{
+export interface ApprovedWorkFlowDataIface{
     divisionName: string
     employeeName: string
     employeeId: number

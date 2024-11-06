@@ -1,0 +1,47 @@
+<form action="" [formGroup]="workFlow" (ngSubmit)="onSubmit()">
+  <div>
+    <label for="divisionName">Division Name</label>
+    <input
+      type="text"
+      formControlName="divisionName"
+      name=""
+      id="divisionName"
+    />
+  </div>
+
+  <div>
+    <label for="">Epf Number</label>
+    <input formControlName="epfNumber" type="text" />
+    
+  </div>
+
+  <div>
+    <label for="">Employee Name</label>
+    <input formControlName="employeeName" type="text" />
+  </div>
+  <button> Submit</button>
+</form>
+
+
+<div>
+    <table *ngIf="tableValues.length;else error">
+        <thead>
+            <tr>
+                <th>Employee Name</th>
+                <th>Divison Name</th>
+                <th>EPF Number</th>
+                
+        </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of tableValues">
+                <td>{{item.employeeName}}</td>
+                <td>{{item.divisionName}}</td>
+                <td>{{item.epfNumber}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<ng-template #error>
+    <p>Data does not exist</p>
+</ng-template>
